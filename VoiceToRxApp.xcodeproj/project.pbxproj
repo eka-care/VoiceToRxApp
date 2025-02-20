@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		703717C52D6615C900C70570 /* Pipify in Frameworks */ = {isa = PBXBuildFile; productRef = 703717C42D6615C900C70570 /* Pipify */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		70C271F02D5B50B800C5FB03 /* VoiceToRxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceToRxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		703717C72D66FADA00C70570 /* Exceptions for "VoiceToRxApp" folder in "VoiceToRxApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 70C271EF2D5B50B800C5FB03 /* VoiceToRxApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		70C271F22D5B50B800C5FB03 /* VoiceToRxApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				703717C72D66FADA00C70570 /* Exceptions for "VoiceToRxApp" folder in "VoiceToRxApp" target */,
+			);
 			path = VoiceToRxApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703717C52D6615C900C70570 /* Pipify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = VoiceToRxApp;
 			packageProductDependencies = (
+				703717C42D6615C900C70570 /* Pipify */,
 			);
 			productName = VoiceToRxApp;
 			productReference = 70C271F02D5B50B800C5FB03 /* VoiceToRxApp.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 70C271E72D5B50B800C5FB03;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				703717C32D6615C900C70570 /* XCRemoteSwiftPackageReference "swiftui-pipify" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 70C271F12D5B50B800C5FB03 /* Products */;
 			projectDirPath = "";
@@ -252,6 +274,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceToRxApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,6 +314,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceToRxApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		703717C32D6615C900C70570 /* XCRemoteSwiftPackageReference "swiftui-pipify" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsidetrack/swiftui-pipify.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		703717C42D6615C900C70570 /* Pipify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 703717C32D6615C900C70570 /* XCRemoteSwiftPackageReference "swiftui-pipify" */;
+			productName = Pipify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70C271E82D5B50B800C5FB03 /* Project object */;
 }

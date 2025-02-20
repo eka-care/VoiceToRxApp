@@ -6,19 +6,22 @@
 //
 
 import SwiftUI
+import Pipify
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  @State var isPresented = false
+  var body: some View {
+    VStack {
+      AudioMessageView()
+        .frame(width: 200, height: 90)
+        .floatingVideoCall(viewWidth: 200, viewHeight: 90)
     }
+    .onAppear {
+      isPresented = true
+    }
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
